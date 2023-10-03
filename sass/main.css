@@ -1,0 +1,129 @@
+html {
+  background-color: bisque;
+}
+
+/*Based*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "TT Lakes", sans-serif;
+  color: #1B1C21;
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  width: 720px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/*All*/
+.main {
+  width: 320px;
+  height: 1024px;
+  background-color: white;
+  box-shadow: 8px 0 48px 0 #b8b8b8;
+}
+
+.topMenu {
+  padding-bottom: 24px;
+  display: flex;
+}
+.topMenu .column {
+  display: flex;
+  align-items: center;
+}
+.topMenu .column a {
+  padding-right: 16px;
+}
+.topMenu .column a:last-child {
+  padding-right: 0px;
+}
+.topMenu .column:nth-child(1) {
+  flex-basis: 60%;
+}
+.topMenu .column:last-child {
+  flex-basis: 40%;
+  justify-content: flex-end;
+}
+
+.main {
+  padding: 24px;
+}
+
+.mainMenu {
+  height: 640px;
+  margin-bottom: 24px;
+}
+.mainMenu .list .item {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+}
+.mainMenu .list .item.active::before {
+  content: "";
+  width: 4px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-8px);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='40' viewBox='0 0 4 40' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z' fill='%2341F6D7'/%3E%3C/svg%3E");
+}
+.mainMenu .list .item.active a {
+  color: #7E7E82;
+}
+
+.bottomMenu {
+  margin-bottom: 16px;
+}
+.bottomMenu .list {
+  display: flex;
+}
+.bottomMenu .list .item {
+  padding-left: 16px;
+}
+.bottomMenu .list .item:first-child {
+  padding-left: 0px;
+}
+
+.mail {
+  margin-bottom: 16px;
+}
+.mail a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.phoneNumber {
+  margin-bottom: 40px;
+}
+.phoneNumber a {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+
+.languages a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.languages .active {
+  color: #7E7E82;
+}/*# sourceMappingURL=main.css.map */
